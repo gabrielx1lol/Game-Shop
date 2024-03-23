@@ -1,104 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Shop -</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Agenda de contatos</title>
 </head>
 <body>
+<div class="container">
     <header>
-        <div id="countainer" class="countainer">        
-            <h1 id="titulo">Game Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Agenda de Contatos</h1>
     </header>
-    <section id="about">
-        <div class="countainer">
-            <img class="img-faixada" src="./images/loja.jpg" alt="faixada da loja Gamers Shop" />
-            <div>
-                <h2>Sobre a loja</h2>
-                <div class="lorem">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus blanditiis dolores suscipit iste quod alias nisi, porro cupiditate vitae, unde explicabo voluptas facere possimus. Voluptate reprehenderit optio nisi recusandae non.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda possimus nesciunt recusandae veniam. Delectus facere officiis commodi totam amet similique, voluptatem ipsam officia explicabo quos libero asperiores sint perferendis.
-                    </p>
-                </div>
-                <ul class="brands-list">
-                    <li><img src="./images/nintendo.png" alt="Nintendo" /></li>
-                    <li><img src="./images/xbox.png" alt="xbox" /></li>
-                    <li><img src="./images/playstation.png" alt="Playstation" /></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contato">
-        <div class="countainer">
-            <h2> Contato</h2>
-            <div class="contact-methods">
-            <div>
-                <h3>Fale conosco</h3>
-                <form>
-                    <input type="text" placeholder="Seu nome" required/>
-                    <input type="email" placeholder="Email" required/>
-                    <input type="tel" placeholder="Telefone(opcional)"/>
-                    <textarea placeholder="Sua mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div>
-                <h3>Nos acompanhe</h3>
-                <ul class="links">
-                    <li>
-                    <a href="#" tilte="Siga-nos no Instagram ">
-                        <img src="images/instagram.png" alt="Logo instagram" />
-                    </a>
-                    </li>
-                    <li>
-                        <a href="#" tilte="Siga-nos no facebook ">
-                            <img src="images/facebook.png" alt="Logo facebook" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" tilte="Se inscreva-se no Youtube ">
-                                <img src="images/youtube.png" alt="Logo youtube" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Venha até nós</h3>
-                <p>
-                    Rua CristianoRonaldo nº7, Vlia Real Madrid - Melhot do Mundo - G.O.A.T
-                </p>
-            </div>
-        </div>
-        </div>
-    </section>
-    <footer>
-        <div class="countainer">
-            <p>
-                &copy;Games Shop - Todos os direitos reservados - 2024
-            </p>
-        </div>
-    </footer>
+    <form id="form-atividade">
+        <input type="text" id="nome-contato" required placeholder="Nome do contato" />
+        <input type="number" id="numero-contato" required placeholder="Numero do telefone" />
+        <button type="submit">Cadastrar +</button>
+    </form>
+    <table cellspacing="0">
+        <tr>
+            <td>Nome</td>
+            <td>Telefone</td>
+        </tr>
+        <tbody>
+        <tr>
+            <th>Nomes</th>
+            <th>Contatos</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    <script src="./main.js"></script>
 </body>
 </html>
